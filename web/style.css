@@ -1,0 +1,258 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgba(86,88,105);
+  padding:20px;
+
+  background:lightblube;
+   border-collapse: collapse;
+}
+
+
+.chat {
+  height: calc(100% - 69px);
+}
+
+.chat-container {
+  height: 100%;
+}
+
+
+
+.conversation {
+  height: calc(100% - 12px);
+  position: relative;
+
+  background-color: rgba(86,88,105);
+  background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+    border:10px solid black;
+  
+}
+
+.conversation ::-webkit-scrollbar {
+  transition: all .5s;
+  width: 5px;
+  height: 1px;
+  z-index: 10;
+}
+
+.conversation ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.conversation ::-webkit-scrollbar-thumb {
+  background: #b3ada7;
+}
+
+.conversation .conversation-container {
+  height: calc(100% - 68px);
+  overflow-x: hidden;
+  padding: 0 16px;
+  margin-bottom: 5px;
+
+  
+}
+
+.conversation .conversation-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.message {
+  color: #FFFFFF;
+clear: both;
+  line-height: 18px;
+  font-size: 18px;
+  font-family: "Monaco", monospace;
+  padding: 8px;
+  position: relative;
+  margin: 8px 0;
+  max-width: 80%;
+  word-wrap: break-word;
+
+
+}
+.message:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.metadata {
+  display: inline-block;
+  float: right;
+  padding: 0 0 0 7px;
+  position: relative;
+  bottom: -4px;
+}
+.metadata .time {
+  color: rgba(0, 0, 0, .45);
+  font-size: 11px;
+  display: inline-block;
+  color:white;
+}
+
+.metadata .tick {
+  display: inline-block;
+  margin-left: 2px;
+  position: relative;
+  top: 4px;
+  height: 16px;
+  width: 16px;
+}
+
+.metadata .tick svg {
+  position: absolute;
+  transition: .5s ease-in-out;
+}
+
+.metadata .tick svg:first-child {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: perspective(800px) rotateY(180deg);
+          transform: perspective(800px) rotateY(180deg);
+}
+
+.metadata .tick svg:last-child {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: perspective(800px) rotateY(0deg);
+          transform: perspective(800px) rotateY(0deg);
+}
+
+.metadata .tick-animation svg:first-child {
+  -webkit-transform: perspective(800px) rotateY(0);
+          transform: perspective(800px) rotateY(0);
+}
+
+.metadata .tick-animation svg:last-child {
+  -webkit-transform: perspective(800px) rotateY(-179.9deg);
+transform: perspective(800px) rotateY(-179.9deg);
+}
+
+.message:first-child {
+  margin: 16px 0 8px;
+}
+
+.message.received {
+  background: #7d8186 ;
+  border-radius: 0px 5px 5px 5px;
+  float: left;
+}
+
+.message.received .metadata {
+  padding: 0 0 0 16px;
+}
+
+.message.received:after {
+  border-width: 0px 10px 10px 0;
+  border-color: transparent #17202A transparent transparent;
+  top: 0;left: -10px;
+}
+
+.message.sent {
+  background: #858b92 ;
+  border-radius: 5px 0px 5px 5px;
+  float: right;
+}
+
+.message.sent:after {
+  border-width: 0px 0 10px 10px;
+  border-color: transparent transparent transparent #17202A ;
+  top: 0;
+  right: -10px;
+}
+
+
+.conversation-compose {
+  display: flex;
+  flex-direction: row;
+align-items: flex-end;
+  overflow: hidden;
+  height: 50px;
+  width: 100%;
+  z-index: 2;
+}
+
+.conversation-compose div,
+.conversation-compose input {
+  background: #acb0b4 ;
+  color:rgb(148, 155, 155);
+  height: 100%;
+}
+
+
+.conversation-compose .input-msg {
+  border:0;
+  flex: 1 1 auto;
+  font-size: 16px;
+  margin: 0;
+  outline: none;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+
+.conversation-compose .send {
+  background: transparent;
+  border: 0;
+cursor: pointer;
+  flex: 0 0 auto;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 0;
+  position: relative;
+  outline: none;
+}
+
+.conversation-compose .send .circle {
+  background: rgba(86,88,105);
+
+  border-radius: 50%;
+  color: #fff;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conversation-compose .send .circle i {
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+
+
+  .marvel-device .status-bar {
+    display: none;
+  }
+
+
+  .conversation {
+    height: calc(100vh - 55px);
+  }
+  .conversation .conversation-container {
+    height: calc(100vh - 120px);
+  }
+
