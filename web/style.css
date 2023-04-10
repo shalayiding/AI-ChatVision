@@ -259,3 +259,14 @@ body {
 .conversation .conversation-container {
   height: calc(100vh - 120px);
 }
+
+.conversation-compose .block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #17202A;
+  border-radius: 5px 0 0 5px;
+  flex: 0 0 auto;
+  margin-left: 8px;
+  width: 48px;
+}
