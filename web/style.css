@@ -12,11 +12,11 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: rgba(86,88,105);
-  padding:20px;
+  background-color: rgba(86, 88, 105);
+  padding: 20px;
 
-  background:lightblube;
-   border-collapse: collapse;
+  background: lightblube;
+  border-collapse: collapse;
 }
 
 
@@ -34,15 +34,15 @@ body {
   height: calc(100% - 12px);
   position: relative;
 
-  background-color: rgba(86,88,105);
+  background-color: rgba(86, 88, 105);
   background-size: cover;
-    background-attachment:fixed;
-    margin: 0;
-    padding: 0;
-    height:100%;
-    width:100%;
-    border:10px solid black;
-  
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  border: 10px solid black;
+
 }
 
 .conversation ::-webkit-scrollbar {
@@ -66,7 +66,7 @@ body {
   padding: 0 16px;
   margin-bottom: 5px;
 
-  
+
 }
 
 .conversation .conversation-container:after {
@@ -77,7 +77,7 @@ body {
 
 .message {
   color: #FFFFFF;
-clear: both;
+  clear: both;
   line-height: 18px;
   font-size: 18px;
   font-family: "Monaco", monospace;
@@ -89,6 +89,7 @@ clear: both;
 
 
 }
+
 .message:after {
   position: absolute;
   content: "";
@@ -104,11 +105,12 @@ clear: both;
   position: relative;
   bottom: -4px;
 }
+
 .metadata .time {
   color: rgba(0, 0, 0, .45);
   font-size: 11px;
   display: inline-block;
-  color:white;
+  color: white;
 }
 
 .metadata .tick {
@@ -127,26 +129,26 @@ clear: both;
 
 .metadata .tick svg:first-child {
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: perspective(800px) rotateY(180deg);
-          transform: perspective(800px) rotateY(180deg);
+  transform: perspective(800px) rotateY(180deg);
 }
 
 .metadata .tick svg:last-child {
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: perspective(800px) rotateY(0deg);
-          transform: perspective(800px) rotateY(0deg);
+  transform: perspective(800px) rotateY(0deg);
 }
 
 .metadata .tick-animation svg:first-child {
   -webkit-transform: perspective(800px) rotateY(0);
-          transform: perspective(800px) rotateY(0);
+  transform: perspective(800px) rotateY(0);
 }
 
 .metadata .tick-animation svg:last-child {
   -webkit-transform: perspective(800px) rotateY(-179.9deg);
-transform: perspective(800px) rotateY(-179.9deg);
+  transform: perspective(800px) rotateY(-179.9deg);
 }
 
 .message:first-child {
@@ -154,7 +156,7 @@ transform: perspective(800px) rotateY(-179.9deg);
 }
 
 .message.received {
-  background: #7d8186 ;
+  background: #7d8186;
   border-radius: 0px 5px 5px 5px;
   float: left;
 }
@@ -166,18 +168,19 @@ transform: perspective(800px) rotateY(-179.9deg);
 .message.received:after {
   border-width: 0px 10px 10px 0;
   border-color: transparent #17202A transparent transparent;
-  top: 0;left: -10px;
+  top: 0;
+  left: -10px;
 }
 
 .message.sent {
-  background: #858b92 ;
+  background: #858b92;
   border-radius: 5px 0px 5px 5px;
   float: right;
 }
 
 .message.sent:after {
   border-width: 0px 0 10px 10px;
-  border-color: transparent transparent transparent #17202A ;
+  border-color: transparent transparent transparent #17202A;
   top: 0;
   right: -10px;
 }
@@ -186,7 +189,7 @@ transform: perspective(800px) rotateY(-179.9deg);
 .conversation-compose {
   display: flex;
   flex-direction: row;
-align-items: flex-end;
+  align-items: flex-end;
   overflow: hidden;
   height: 50px;
   width: 100%;
@@ -195,14 +198,14 @@ align-items: flex-end;
 
 .conversation-compose div,
 .conversation-compose input {
-  background: #acb0b4 ;
-  color:rgb(148, 155, 155);
+  background: #acb0b4;
+  color: rgb(148, 155, 155);
   height: 100%;
 }
 
 
 .conversation-compose .input-msg {
-  border:0;
+  border: 0;
   flex: 1 1 auto;
   font-size: 16px;
   margin: 0;
@@ -215,7 +218,7 @@ align-items: flex-end;
 .conversation-compose .send {
   background: transparent;
   border: 0;
-cursor: pointer;
+  cursor: pointer;
   flex: 0 0 auto;
   margin-left: 8px;
   margin-right: 8px;
@@ -225,7 +228,7 @@ cursor: pointer;
 }
 
 .conversation-compose .send .circle {
-  background: rgba(86,88,105);
+  background: rgba(86, 88, 105);
 
   border-radius: 50%;
   color: #fff;
@@ -244,15 +247,15 @@ cursor: pointer;
 
 
 
-  .marvel-device .status-bar {
-    display: none;
-  }
+.marvel-device .status-bar {
+  display: none;
+}
 
 
-  .conversation {
-    height: calc(100vh - 55px);
-  }
-  .conversation .conversation-container {
-    height: calc(100vh - 120px);
-  }
+.conversation {
+  height: calc(100vh - 55px);
+}
 
+.conversation .conversation-container {
+  height: calc(100vh - 120px);
+}
