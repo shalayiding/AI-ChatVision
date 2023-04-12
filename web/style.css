@@ -66,7 +66,6 @@ body {
   padding: 0 16px;
   margin-bottom: 5px;
 
-
 }
 
 .conversation .conversation-container:after {
@@ -76,15 +75,14 @@ body {
 }
 
 .message {
-  color: #FFFFFF;
+  color: #000000;
   clear: both;
   line-height: 18px;
   font-size: 18px;
-  font-family: "Monaco", monospace;
   padding: 8px;
   position: relative;
   margin: 8px 0;
-  max-width: 80%;
+  max-width: 70%;
   word-wrap: break-word;
 
 
@@ -98,58 +96,10 @@ body {
   border-style: solid;
 }
 
-.metadata {
-  display: inline-block;
-  float: right;
-  padding: 0 0 0 7px;
-  position: relative;
-  bottom: -4px;
-}
 
-.metadata .time {
-  color: rgba(0, 0, 0, .45);
-  font-size: 11px;
-  display: inline-block;
-  color: white;
-}
 
-.metadata .tick {
-  display: inline-block;
-  margin-left: 2px;
-  position: relative;
-  top: 4px;
-  height: 16px;
-  width: 16px;
-}
 
-.metadata .tick svg {
-  position: absolute;
-  transition: .5s ease-in-out;
-}
 
-.metadata .tick svg:first-child {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: perspective(800px) rotateY(180deg);
-  transform: perspective(800px) rotateY(180deg);
-}
-
-.metadata .tick svg:last-child {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: perspective(800px) rotateY(0deg);
-  transform: perspective(800px) rotateY(0deg);
-}
-
-.metadata .tick-animation svg:first-child {
-  -webkit-transform: perspective(800px) rotateY(0);
-  transform: perspective(800px) rotateY(0);
-}
-
-.metadata .tick-animation svg:last-child {
-  -webkit-transform: perspective(800px) rotateY(-179.9deg);
-  transform: perspective(800px) rotateY(-179.9deg);
-}
 
 .message:first-child {
   margin: 16px 0 8px;
