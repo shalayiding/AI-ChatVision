@@ -6,11 +6,12 @@
 
   <title>GPT++</title>
 
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
   <!-- hight light js  -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/base16/dracula.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/monokai-sublime.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
 
 
@@ -21,31 +22,30 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="../eel.js"></script>
   <script src="script.js"></script>
+  <script src="graphic_setup.js" ></script>
 </head>
 
 <body>
-  <div class="chat">
-    <div class="chat-container">
+  
       <div class="conversation">
         <div class="conversation-container">
           <span id="ap">
           </span>
         </div>
         <form id="form" class="conversation-compose">
-          <div class="block"></div>
-          <textarea id="val" class="input-msg" name="input" placeholder="Type a message" autocomplete="off"
-            autofocus></textarea>
-
-          <span id="speak"></span>
+          <textarea id="val" class="input-msg" oninput = "autoExpand(this)" name="input" placeholder="Type a message"></textarea>
           <span class="send">
             <div class="circle">
-              <i id="msend" class="zmdi zmdi-mail-send"></i>
+              <button id = "msend" style="background:transparent;border:none;">
+                <svg stroke="white" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-1" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg></button>
             </div>
           </span>
         </form>
       </div>
-    </div>
-  </div>
+
   </div>
   </div>
   </div>

@@ -3,45 +3,6 @@
 
 $(function () {
 
-  function Code_block_extract(str) {  //extract the code block from the markdown 
-    // Extract the code block from the Markdown string
-    const codeBlockRegex = /^`{3}([\s\S]*)`{3}$/gm;
-    const codeBlockMatches = codeBlockRegex.exec(str);
-
-    let codeBlock = null;
-    if (codeBlockMatches && codeBlockMatches.length > 1) {
-      codeBlock = codeBlockMatches[1];
-    }
-
-    // Split the Markdown string into an array of strings with their corresponding indices
-    const markdownArray = str.split('\n');
-    const indexArray = markdownArray.map((_, index) => index);
-
-    // Determine which strings are part of the code block
-    const isInCodeBlock = (index) => {
-      if (!codeBlock) {
-        return false;
-      }
-
-      const codeBlockLines = codeBlock.split('\n').length;
-      const codeBlockStartIndex = markdownArray.indexOf('```')-1;
-      const codeBlockEndIndex = codeBlockStartIndex + codeBlockLines + 1;
-
-      return index > codeBlockStartIndex && index < codeBlockEndIndex;
-    };
-
-    // Create a list of strings with their corresponding indices indicating whether they are part of the code block
-    const stringList = markdownArray.map((string, index) => {
-      return { string, index, isInCodeBlock: isInCodeBlock(index) };
-    });
-    var all_string_list = [];
-    stringList.forEach((stringItem) => {
-      console.log(`Index: ${stringItem.index}, String: ${stringItem.string}, Is in code block: ${stringItem.isInCodeBlock}`);
-    });
-    
-    return stringList 
-
-  }
 
 
   function none_code_markdown(str,markdown_div){
@@ -136,6 +97,8 @@ $(function () {
     } else {
       createDiv(message, "ap", 'message sent');
       document.getElementById("val").value = ''; // clear input field after adding message
+      document.getElementById("val").style.height = "84px";
+      // document.getElementById("val").style.lineHeight = "2";
       lastmessage = message.toUpperCase().trim();
       $(".conversation-container").scrollTop(scroll);
       send(message);

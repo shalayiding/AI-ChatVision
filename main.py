@@ -10,4 +10,4 @@ def show_message(userinput):
 	return gpt_raw_result
 
 # Start the index.html file
-eel.start("interface.html",size = (800,600))
+eel.start("interface.html",size = (1080,900))
