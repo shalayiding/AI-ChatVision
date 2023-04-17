@@ -2,7 +2,7 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>GPT++</title>
 
@@ -29,10 +29,27 @@
   
       <div class="conversation">
         <div class="conversation-container">
+          <!-- <iframe src="https://www.africau.edu/images/default/sample.pdf" style="width:600px; height:500px;" frameborder="0"></iframe> -->
+          <!-- <embed src="https://www.africau.edu/images/default/sample.pdf" width="500" height="375" type="application/pdf"> -->
           <span id="ap">
+           
           </span>
         </div>
         <form id="form" class="conversation-compose">
+          <!-- <div class="block">
+            <input type="file" id="uploadFile" class="fa fa-upload"/> -->
+            <!-- <i class="fa fa-upload"></i> -->
+
+          <!-- </div> -->
+
+          <label for="myFileInput" class="uploadButton">
+            <input type="file" id="myFileInput">
+            <span class="fa fa-upload"></span>
+          </label>
+
+
+
+
           <textarea id="val" class="input-msg" oninput = "autoExpand(this)" name="input" placeholder="Type a message"></textarea>
           <span class="send">
             <div class="circle">
