@@ -7,7 +7,7 @@ print("number of page in the pdf : ", len(reader.pages))
 
 # print the text of the first page
 content = "what is this paper about ? : \n"
-for i in range(0,len(reader.pages)-2):
+for i in range(0,len(reader.pages)):
     content += reader.pages[i].extract_text()
 
 print(gpt_api.GPT_API_CALL(content))

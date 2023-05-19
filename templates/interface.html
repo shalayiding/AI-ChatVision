@@ -1,46 +1,43 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  
   <title>GPT++</title>
 
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
   <!-- hight light js  -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/monokai-sublime.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
 
 
+  <!-- icon -->
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>      
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
   <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript" src="../eel.js"></script>
-  <script src="script.js"></script>
-  <script src="graphic_setup.js" ></script>
+  
+  <!-- static loading -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="{{ url_for('static', filename='graphic_setup.js') }}"></script>
 </head>
 
 <body>
   
       <div class="conversation">
         <div class="conversation-container">
-          <!-- <iframe src="https://www.africau.edu/images/default/sample.pdf" style="width:600px; height:500px;" frameborder="0"></iframe> -->
-          <!-- <embed src="https://www.africau.edu/images/default/sample.pdf" width="500" height="375" type="application/pdf"> -->
+          
           <span id="ap">
-           
           </span>
         </div>
         <form id="form" class="conversation-compose">
-          <!-- <div class="block">
-            <input type="file" id="uploadFile" class="fa fa-upload"/> -->
-            <!-- <i class="fa fa-upload"></i> -->
-
-          <!-- </div> -->
 
           <label for="myFileInput" class="uploadButton">
             <input type="file" id="myFileInput">
