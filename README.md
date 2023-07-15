@@ -16,7 +16,7 @@ Once installed, run the "main.py" file to start the application. This will launc
 ## Features
 The current version of the application allows users to ask questions and receive responses from ChatGPT. Additionally, users can upload a PDF file, which will be analyzed and sent to ChatGPT for further processing. The responses are displayed within the chatbot interface.
 ![alt text](/IMAGES/interface.png)
-
+![alt text](/IMAGES/chatgpt_interface.png)
 ## Future Development
 The project is actively being developed, with future plans to incorporate image generation using ChatGPT. We aim to integrate stable diffusion methods and prompt ChatGPT with engineering specifications to generate images.
 
