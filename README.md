@@ -1,4 +1,4 @@
-# ChatGPT_FlaskVision
+# AI-ChatVision
 
 This open-source project leverages the OpenAI API to provide users with an interactive chatbot experience. Developed using Python Flask as the backend framework, it combines JavaScript, HTML, and CSS for the frontend interface. The application enables users to engage in conversations with ChatGPT, an OpenAI language model.
 This project combines ChatGPT with the Stable Diffusion Image Model to enable users to have conversational interactions with ChatGPT and receive AI-generated images as responses.
