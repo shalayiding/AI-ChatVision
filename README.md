@@ -1,24 +1,26 @@
-﻿# ChatGPT_interface_Imagelibrary
+# ChatGPT_FlaskVision
 
-This is an open-source project that utilizes the OpenAI API to provide users with a chatbot experience. The project is built using Python as the backend language, and JavaScript, HTML, and CSS for the frontend. The application provides users with an interactive chatbot experience where they can ask questions and get responses from ChatGPT, a large language model trained by OpenAI.
+This open-source project leverages the OpenAI API to provide users with an interactive chatbot experience. Developed using Python Flask as the backend framework, it combines JavaScript, HTML, and CSS for the frontend interface. The application enables users to engage in conversations with ChatGPT, an OpenAI language model.
+This project combines ChatGPT with the Stable Diffusion Image Model to enable users to have conversational interactions with ChatGPT and receive AI-generated images as responses.
 
 ## Getting Started
-To use this application, you need to have an OpenAI API key. You can obtain the API key from the OpenAI website. Once you have the API key, you need to copy and paste it into a file named "gpt_api.key". This file should be in the root directory of the project.
+To use this application, you'll need an OpenAI API key obtained from their website. Copy and paste the API key into a file named "gpt_api.key" in the project's root directory.
 
-You also need to install the Eel library in Python. Eel is a Python library that allows you to create desktop GUI applications using web technologies such as HTML, CSS, and JavaScript. You can install Eel using pip:
+Install the required dependencies, including Flask, by running:
 ```
 pip install -r requirements.txt
 ```
-Once you have installed Eel, you can run the application by running the "main.py" file. This will launch a web browser with the chatbot interface.
+
+Once installed, run the "main.py" file to start the application. This will launch a web browser with the chatbot interface.
 
 ## Features
-The current version of the application allows users to ask questions and get responses from ChatGPT. The application also includes a feature that allows users to upload a PDF file, and the application will analyze the text and send it to ChatGPT. The responses from ChatGPT are displayed in the chatbot interface.
+The current version of the application allows users to ask questions and receive responses from ChatGPT. Additionally, users can upload a PDF file, which will be analyzed and sent to ChatGPT for further processing. The responses are displayed within the chatbot interface.
 ![alt text](/IMAGES/interface.png)
 
 ## Future Development
-The project is still in development, and there are several features that we plan to add in the future. One of the features we plan to add is the ability to generate images using ChatGPT. We plan to use stable diffusion to generate images by prompting ChatGPT with engineering specifications.
+The project is actively being developed, with future plans to incorporate image generation using ChatGPT. We aim to integrate stable diffusion methods and prompt ChatGPT with engineering specifications to generate images.
 
 ## Contributing
-We welcome contributions to this project. If you would like to contribute, please fork the repository and create a pull request.
+Contributions to this project are welcome. To contribute, fork the repository and create a pull request.
 
 
